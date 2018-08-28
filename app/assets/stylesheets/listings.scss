@@ -1,0 +1,153 @@
+.loader {
+  border: 13px solid #f3f3f3;
+  border-top: 13px solid #f20801;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.2s linear infinite;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-listings {
+  background: #eee;
+  min-height: 100%;
+  padding-bottom: 35px;
+}
+.gray-margin {
+  height: 10px;
+  background: #eee;
+}
+
+.main-listings {
+  box-sizing: border-box;
+  width: 1170px;
+  height: auto;
+  background: white;
+  margin: 0 auto;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
+  padding: 25px 40px;
+  display: flex;
+}
+
+.search-filters-container {
+  width: 300px;
+}
+
+.search-filters-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.price-range-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-range-button {
+  background: #f20902;
+  color: white;
+  padding: 4px 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.search-range-button:hover {
+  // background: black;
+  // box-shadow: 0 0.5em 0.5em -0.4em rgb(0, 0, 0);
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+
+.listings-container {
+  margin-left: 40px;
+}
+
+.listings-index-list {
+  background: #eee;
+  padding: 10px;
+}
+
+.results-title {
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+// .listings-index-list .list-item:last-child {
+//   margin-bottom: 0;
+// }
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  color: #333;
+  height: 50px;
+  align-items: center;
+}
+
+.prev-nolink {
+  margin-right: 12px;
+  color: #888;
+}
+
+.prev-link {
+  margin-right: 12px;
+}
+
+.prev-link:hover {
+  color: #f20902;
+}
+
+.current-page {
+  margin-right: 5px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.next-page {
+  margin-right: 5px;
+}
+
+.next-page:hover {
+  color: #f20902;
+}
+
+.last-page {
+  margin-left: 8px;
+}
+
+.last-page:hover {
+  color: #f20902;
+}
+
+.next-nolink {
+  margin-left: 12px;
+  color: #888;
+}
+
+.next-link {
+  margin-left: 12px;
+}
+
+.next-link:hover {
+  color: #f20902;
+}
+
+.fa-angle-right {
+  margin-left: 5px;
+}
+
+.page-wrapper {
+  display: flex;
+}

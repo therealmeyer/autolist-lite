@@ -1,0 +1,126 @@
+.bg-detail {
+  background: #eee;
+  height: 100vh;
+  padding-bottom: 35px;
+}
+
+.main-detail {
+  box-sizing: border-box;
+  width: 1170px;
+  height: auto;
+  background: white;
+  margin: 0 auto;
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.2);
+  padding: 25px 30px;
+}
+
+.detail-container {
+  display: flex;
+}
+
+.img-carousel {
+  width: 640px;
+  height: 475px;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  position: relative;
+}
+
+.back-to-search {
+  box-sizing: border-box;
+  width: 1170px;
+  margin: 0 auto;
+  color: #f20801;
+  margin-bottom: 10px;
+}
+
+.fa-arrow-circle-left {
+  font-size: 32px;
+  color: #ccc;
+  margin-left: 20px;
+}
+
+.fa-arrow-circle-left:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-arrow-circle-right {
+  font-size: 32px;
+  color: #ccc;
+  margin-right: 20px;
+}
+
+.fa-arrow-circle-right:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.img-nums {
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.fa-camera-retro {
+  font-size: 18px;
+}
+
+.length-photos {
+  margin-left: 5px;
+}
+
+.car-detail-info {
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.car-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.car-mileage {
+  font-size: 18px;
+  margin-bottom: 10px;
+
+}
+
+.car-price {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+.car-views {
+  color: #888;
+}
+
+.car-basic-info {
+  margin-top: 25px;
+  width: 450px;
+}
+
+.basic-info {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.info-line-container {
+  // width: 450px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0px;
+}
