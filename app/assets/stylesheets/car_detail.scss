@@ -37,6 +37,11 @@
   margin-bottom: 10px;
 }
 
+.back-to-search:hover {
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+
 .fa-arrow-circle-left {
   font-size: 32px;
   color: #ccc;
