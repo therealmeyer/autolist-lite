@@ -5,9 +5,15 @@ class CarDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentImg: this.getImgUrl(this.props.currentCar.photo_urls[0]),
+      currentImg: this.props.currentCar.photo_urls ? this.getImgUrl(this.props.currentCar.photo_urls[0]) : null,
       currentImgNum: 0
     };
+  }
+
+  componentDidMount() {
+    if (!this.props.currentCar.id) {
+      this.props.history.goBack();
+    }
   }
 
   getImgUrl(url) {
@@ -45,9 +51,9 @@ class CarDetail extends Component {
   }
 
   render() {
-    // if (this.props.currentCar.id) {
-    //   this.setState({ currentImg:  });
-    // }
+    if (!this.props.currentCar.id) {
+      return <div className="loader"></div>
+    }
     const { currentCar } = this.props;
     const title = `${currentCar.year} ${currentCar.make} ${currentCar.model}`;
     const location = `${currentCar.city}, ${currentCar.state}`;

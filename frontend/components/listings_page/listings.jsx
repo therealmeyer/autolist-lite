@@ -30,7 +30,7 @@ class Listings extends Component {
     const values = queryString.parse(this.props.location.search);
     const nextVals = queryString.parse(nextProps.location.search);
     if (nextVals.min !== values.min || nextVals.max !== values.max || nextVals.page !== values.page) {
-      this.setState({loading: true});
+      this.setState({loading: true, min: nextVals.min, max: nextVals.max});
       this.props.fetchSearch(nextVals).then(() => {
         this.setState({loading: false}); 
         window.scrollTo(0,0);
